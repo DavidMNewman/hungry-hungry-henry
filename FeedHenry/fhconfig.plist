@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>host</key>
+        <string>https://bluefletch.us.evals.redhatmobile.com</string>
+        <key>appid</key>
+        <string>uuixxumu7b4mzhxqaob77haq</string>
+        <key>projectid</key>
+        <string>uuixxujfurtkunwmlet2hhb3</string>
+        <key>appkey</key>
+        <string>8176b4330d8cb9fe1c0225933f3e70c488e5973e</string>
+        <key>connectiontag</key>
+        <string>0.0.2</string>
+    </dict>
+</plist>

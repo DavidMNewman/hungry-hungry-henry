@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177B71FF8C61A334E667166B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B71A228333742B87CC13E /* ViewController.m */; };
+		177B73E69329AA142C29254C /* PETPet.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B71044680D3F82DE0336C /* PETPet.m */; };
+		177B74C9651596E42AAE8D78 /* PETTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B77E346AC88704565F680 /* PETTask.m */; };
+		177B75BC1C55DB1B8CDD8D07 /* PETPetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B7F11A811B47839330650 /* PETPetService.m */; };
+		177B7BCB8EC018758E25FDA2 /* PETPetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B7E62436BADB7995A7101 /* PETPetsViewController.m */; };
+		177B7F4F9361B6183E567C8C /* PETPetDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 177B7D69A613524F291F5507 /* PETPetDetailsViewController.m */; };
+		F0047D371C8E27910091670E /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0047D361C8E27910091670E /* libxml2.tbd */; };
+		F0047D391C8E279D0091670E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0047D381C8E279D0091670E /* libz.tbd */; };
+		F0047D3B1C8E27A40091670E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0047D3A1C8E27A40091670E /* SystemConfiguration.framework */; };
+		F0047D3F1C8E27E00091670E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0047D3C1C8E27E00091670E /* AdSupport.framework */; };
+		F0047D401C8E27E00091670E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0047D3D1C8E27E00091670E /* CFNetwork.framework */; };
+		F0047D411C8E27E00091670E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0047D3E1C8E27E00091670E /* MobileCoreServices.framework */; };
 		F03E3FB51C6E696F00B75BEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F03E3FB41C6E696F00B75BEE /* main.m */; };
 		F03E3FB81C6E696F00B75BEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F03E3FB71C6E696F00B75BEE /* AppDelegate.m */; };
-		F03E3FBB1C6E696F00B75BEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03E3FBA1C6E696F00B75BEE /* ViewController.m */; };
 		F03E3FBE1C6E696F00B75BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03E3FBC1C6E696F00B75BEE /* Main.storyboard */; };
 		F03E3FC01C6E696F00B75BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F03E3FBF1C6E696F00B75BEE /* Assets.xcassets */; };
 		F03E3FC31C6E696F00B75BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03E3FC11C6E696F00B75BEE /* LaunchScreen.storyboard */; };
 		F03E3FCE1C6E696F00B75BEE /* FeedHenryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F03E3FCD1C6E696F00B75BEE /* FeedHenryTests.m */; };
 		F03E3FD91C6E696F00B75BEE /* FeedHenryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F03E3FD81C6E696F00B75BEE /* FeedHenryUITests.m */; };
+		F03E3FE81C6E69F900B75BEE /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03E3FE71C6E69F900B75BEE /* FH.framework */; };
+		F03E3FE91C6E69F900B75BEE /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03E3FE71C6E69F900B75BEE /* FH.framework */; };
+		F03E3FEE1C6E6A4C00B75BEE /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F03E3FED1C6E6A4C00B75BEE /* fhconfig.plist */; };
+		F03E3FEF1C6E6A4C00B75BEE /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F03E3FED1C6E6A4C00B75BEE /* fhconfig.plist */; };
+		F055563D1C8F675000C0C70E /* PETPetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F055563C1C8F675000C0C70E /* PETPetTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +51,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		177B7087794A7A30B3231AE0 /* PETTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PETTask.h; sourceTree = "<group>"; };
+		177B71044680D3F82DE0336C /* PETPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PETPet.m; sourceTree = "<group>"; };
+		177B71A228333742B87CC13E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		177B751572C9A1B5745EC52D /* PETPetDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PETPetDetailsViewController.h; sourceTree = "<group>"; };
+		177B75A681D87A25EC092524 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		177B77E346AC88704565F680 /* PETTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PETTask.m; sourceTree = "<group>"; };
+		177B7D52D31ECA9EBB3898E9 /* PETPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PETPet.h; sourceTree = "<group>"; };
+		177B7D69A613524F291F5507 /* PETPetDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PETPetDetailsViewController.m; sourceTree = "<group>"; };
+		177B7E62436BADB7995A7101 /* PETPetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PETPetsViewController.m; sourceTree = "<group>"; };
+		177B7F04AB943B309C89A314 /* PETPetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PETPetsViewController.h; sourceTree = "<group>"; };
+		177B7F11A811B47839330650 /* PETPetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PETPetService.m; sourceTree = "<group>"; };
+		177B7FD448C784B8B8C95483 /* PETPetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PETPetService.h; sourceTree = "<group>"; };
+		F0047D361C8E27910091670E /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F0047D381C8E279D0091670E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F0047D3A1C8E27A40091670E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F0047D3C1C8E27E00091670E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F0047D3D1C8E27E00091670E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F0047D3E1C8E27E00091670E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F03E3FB01C6E696F00B75BEE /* FeedHenry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedHenry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03E3FB41C6E696F00B75BEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F03E3FB61C6E696F00B75BEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F03E3FB71C6E696F00B75BEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F03E3FB91C6E696F00B75BEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F03E3FBA1C6E696F00B75BEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F03E3FBD1C6E696F00B75BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F03E3FBF1C6E696F00B75BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F03E3FC21C6E696F00B75BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +83,10 @@
 		F03E3FD41C6E696F00B75BEE /* FeedHenryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedHenryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03E3FD81C6E696F00B75BEE /* FeedHenryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedHenryUITests.m; sourceTree = "<group>"; };
 		F03E3FDA1C6E696F00B75BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F03E3FE71C6E69F900B75BEE /* FH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FH.framework; sourceTree = "<group>"; };
+		F03E3FED1C6E6A4C00B75BEE /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
+		F055563B1C8F675000C0C70E /* PETPetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PETPetTableViewCell.h; sourceTree = "<group>"; };
+		F055563C1C8F675000C0C70E /* PETPetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PETPetTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +94,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0047D3F1C8E27E00091670E /* AdSupport.framework in Frameworks */,
+				F0047D401C8E27E00091670E /* CFNetwork.framework in Frameworks */,
+				F0047D411C8E27E00091670E /* MobileCoreServices.framework in Frameworks */,
+				F0047D3B1C8E27A40091670E /* SystemConfiguration.framework in Frameworks */,
+				F0047D391C8E279D0091670E /* libz.tbd in Frameworks */,
+				F0047D371C8E27910091670E /* libxml2.tbd in Frameworks */,
+				F03E3FE81C6E69F900B75BEE /* FH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03E3FE91C6E69F900B75BEE /* FH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +122,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177B712DCD7A0D031957ECAA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				177B75A681D87A25EC092524 /* ViewController.h */,
+				177B71A228333742B87CC13E /* ViewController.m */,
+				177B7E62436BADB7995A7101 /* PETPetsViewController.m */,
+				177B7F04AB943B309C89A314 /* PETPetsViewController.h */,
+				177B7D69A613524F291F5507 /* PETPetDetailsViewController.m */,
+				177B751572C9A1B5745EC52D /* PETPetDetailsViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		177B77C2793E0346A41FA891 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				177B7F11A811B47839330650 /* PETPetService.m */,
+				177B7FD448C784B8B8C95483 /* PETPetService.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		177B7D26191C1571B9FFF5A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				177B71044680D3F82DE0336C /* PETPet.m */,
+				177B7D52D31ECA9EBB3898E9 /* PETPet.h */,
+				177B77E346AC88704565F680 /* PETTask.m */,
+				177B7087794A7A30B3231AE0 /* PETTask.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		177B7F276F40E03AAFD4EFFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F055563B1C8F675000C0C70E /* PETPetTableViewCell.h */,
+				F055563C1C8F675000C0C70E /* PETPetTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F03E3FA71C6E696F00B75BEE = {
 			isa = PBXGroup;
 			children = (
+				F0047D3C1C8E27E00091670E /* AdSupport.framework */,
+				F0047D3D1C8E27E00091670E /* CFNetwork.framework */,
+				F0047D3E1C8E27E00091670E /* MobileCoreServices.framework */,
+				F0047D3A1C8E27A40091670E /* SystemConfiguration.framework */,
+				F0047D381C8E279D0091670E /* libz.tbd */,
+				F0047D361C8E27910091670E /* libxml2.tbd */,
 				F03E3FB21C6E696F00B75BEE /* FeedHenry */,
 				F03E3FCC1C6E696F00B75BEE /* FeedHenryTests */,
 				F03E3FD71C6E696F00B75BEE /* FeedHenryUITests */,
@@ -101,15 +193,19 @@
 		F03E3FB21C6E696F00B75BEE /* FeedHenry */ = {
 			isa = PBXGroup;
 			children = (
+				F03E3FED1C6E6A4C00B75BEE /* fhconfig.plist */,
+				F03E3FE61C6E69F900B75BEE /* Frameworks */,
 				F03E3FB61C6E696F00B75BEE /* AppDelegate.h */,
 				F03E3FB71C6E696F00B75BEE /* AppDelegate.m */,
-				F03E3FB91C6E696F00B75BEE /* ViewController.h */,
-				F03E3FBA1C6E696F00B75BEE /* ViewController.m */,
 				F03E3FBC1C6E696F00B75BEE /* Main.storyboard */,
 				F03E3FBF1C6E696F00B75BEE /* Assets.xcassets */,
 				F03E3FC11C6E696F00B75BEE /* LaunchScreen.storyboard */,
 				F03E3FC41C6E696F00B75BEE /* Info.plist */,
 				F03E3FB31C6E696F00B75BEE /* Supporting Files */,
+				177B712DCD7A0D031957ECAA /* ViewControllers */,
+				177B7F276F40E03AAFD4EFFB /* Views */,
+				177B7D26191C1571B9FFF5A5 /* Models */,
+				177B77C2793E0346A41FA891 /* Services */,
 			);
 			path = FeedHenry;
 			sourceTree = "<group>";
@@ -138,6 +234,14 @@
 				F03E3FDA1C6E696F00B75BEE /* Info.plist */,
 			);
 			path = FeedHenryUITests;
+			sourceTree = "<group>";
+		};
+		F03E3FE61C6E69F900B75BEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F03E3FE71C6E69F900B75BEE /* FH.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +311,7 @@
 				TargetAttributes = {
 					F03E3FAF1C6E696F00B75BEE = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9JSR35UNSX;
 					};
 					F03E3FC81C6E696F00B75BEE = {
 						CreatedOnToolsVersion = 7.3;
@@ -243,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03E3FEE1C6E6A4C00B75BEE /* fhconfig.plist in Resources */,
 				F03E3FC31C6E696F00B75BEE /* LaunchScreen.storyboard in Resources */,
 				F03E3FC01C6E696F00B75BEE /* Assets.xcassets in Resources */,
 				F03E3FBE1C6E696F00B75BEE /* Main.storyboard in Resources */,
@@ -253,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03E3FEF1C6E6A4C00B75BEE /* fhconfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +377,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F03E3FBB1C6E696F00B75BEE /* ViewController.m in Sources */,
 				F03E3FB81C6E696F00B75BEE /* AppDelegate.m in Sources */,
 				F03E3FB51C6E696F00B75BEE /* main.m in Sources */,
+				177B71FF8C61A334E667166B /* ViewController.m in Sources */,
+				177B7BCB8EC018758E25FDA2 /* PETPetsViewController.m in Sources */,
+				F055563D1C8F675000C0C70E /* PETPetTableViewCell.m in Sources */,
+				177B73E69329AA142C29254C /* PETPet.m in Sources */,
+				177B74C9651596E42AAE8D78 /* PETTask.m in Sources */,
+				177B75BC1C55DB1B8CDD8D07 /* PETPetService.m in Sources */,
+				177B7F4F9361B6183E567C8C /* PETPetDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +526,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FeedHenry/Frameworks",
+				);
 				INFOPLIST_FILE = FeedHenry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluefletch.FeedHenry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -424,10 +545,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FeedHenry/Frameworks",
+				);
 				INFOPLIST_FILE = FeedHenry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluefletch.FeedHenry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -435,6 +564,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FeedHenry/Frameworks",
+				);
 				INFOPLIST_FILE = FeedHenryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluefletch.FeedHenryTests;
@@ -447,6 +580,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FeedHenry/Frameworks",
+				);
 				INFOPLIST_FILE = FeedHenryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluefletch.FeedHenryTests;
@@ -496,6 +633,7 @@
 				F03E3FDF1C6E696F00B75BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F03E3FE01C6E696F00B75BEE /* Build configuration list for PBXNativeTarget "FeedHenryTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +642,7 @@
 				F03E3FE21C6E696F00B75BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F03E3FE31C6E696F00B75BEE /* Build configuration list for PBXNativeTarget "FeedHenryUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +651,7 @@
 				F03E3FE51C6E696F00B75BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

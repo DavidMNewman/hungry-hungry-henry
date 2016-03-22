@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+@import FH.FH;
+@import FH.FHResponse;
 
 @interface AppDelegate ()
 
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [FH initWithSuccess:^(FHResponse *success) {
+        NSLog(@"SDK initialised OK");
+    } AndFailure:^(FHResponse *failed) {
+        NSLog(@"Initialisation failed. Response = %@", failed.error);
+    }];
     return YES;
 }
 

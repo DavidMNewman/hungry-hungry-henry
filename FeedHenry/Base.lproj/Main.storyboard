@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W53-wc-lor">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pet Details View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PETPetDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,98 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nqw-v1-syD">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jSW-AI-WY2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ajS-Y8-pYo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nqw-v1-syD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="M6G-5f-Fb9"/>
+                            <constraint firstItem="nqw-v1-syD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qd6-u1-Tjo"/>
+                            <constraint firstItem="nqw-v1-syD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="sx2-m0-RCI"/>
+                            <constraint firstItem="nqw-v1-syD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="tRu-aX-GoM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="nqw-v1-syD" id="jVy-wz-Wi6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1528" y="358"/>
+        </scene>
+        <!--Hungry Henry-->
+        <scene sceneID="TwK-Oo-q4D">
+            <objects>
+                <viewController id="b3L-4y-NQa" customClass="PETPetsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4UT-Mb-Mwk"/>
+                        <viewControllerLayoutGuide type="bottom" id="xxJ-47-61v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4S7-Yc-I0a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs0-pd-AWH">
+                                <rect key="frame" x="20" y="20" width="160" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Pi-jp-syk">
+                                <rect key="frame" x="0.0" y="72" width="600" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="b3L-4y-NQa" id="vV4-SM-JA6"/>
+                                    <outlet property="delegate" destination="b3L-4y-NQa" id="QAp-Ja-fce"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xxJ-47-61v" firstAttribute="top" secondItem="1Pi-jp-syk" secondAttribute="bottom" constant="8" id="HbR-dt-Tba"/>
+                            <constraint firstItem="1Pi-jp-syk" firstAttribute="centerX" secondItem="4S7-Yc-I0a" secondAttribute="centerX" id="PMt-t7-TJr"/>
+                            <constraint firstItem="1Pi-jp-syk" firstAttribute="top" secondItem="4UT-Mb-Mwk" secondAttribute="bottom" constant="8" id="big-eh-leK"/>
+                            <constraint firstItem="1Pi-jp-syk" firstAttribute="width" secondItem="4S7-Yc-I0a" secondAttribute="width" id="dEN-48-5Bb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hungry Henry" id="dRt-Iw-c2e">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1jD-7i-9QR">
+                            <connections>
+                                <action selector="addNewPetClicked:" destination="b3L-4y-NQa" id="PXv-SC-fUJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="1Pi-jp-syk" id="tCC-x0-zMN"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="SeguePetDetails" id="Kfk-46-A8e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Qf-Xn-N8q" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="358"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DB2-hG-sZS">
+            <objects>
+                <navigationController id="W53-wc-lor" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VNJ-xZ-8qh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="b3L-4y-NQa" kind="relationship" relationship="rootViewController" id="TV0-KO-noq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oek-9b-NMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="358"/>
         </scene>
     </scenes>
 </document>
